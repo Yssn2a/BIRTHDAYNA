@@ -63,9 +63,11 @@ img {
 }
 
 p {
-  font-family: 'Zeyada';
-  font-size: 50px;
-  color: rgb(0,0,100);
+  font-family: "Pathway Gothic One", serif;
+  font-weight: 600;
+  font-size: 30px;
+  font-style: normal;
+  color: rgb(255 255 255);
   opacity: 0.75;
   user-select: none;
   
