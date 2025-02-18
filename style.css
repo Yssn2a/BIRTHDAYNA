@@ -13,6 +13,10 @@ body {
   background-image: url("https://i.ibb.co/9d8xyvr/back.png");
   background-position: center center;
 }
+.wide {
+  width: 450px;
+  height: 450px/* Adjust the width as needed */
+}
 
 .paper {
   background-image: url("https://static.vecteezy.com/system/resources/previews/006/893/584/non_2x/textured-crumpled-black-paper-background-free-photo.jpg");
