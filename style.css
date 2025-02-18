@@ -15,7 +15,8 @@ body {
 }
 .wide {
   width: 300px;
-  height: 200px;/* Adjust the width as needed */
+  height: 200px;
+  align-items: center;/* Adjust the width as needed */
 }
 
 .paper {
