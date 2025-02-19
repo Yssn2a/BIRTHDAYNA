@@ -1,5 +1,12 @@
 let highestZ = 1;
+function isMobile() {
+  return /Mobi|Android/i.test(navigator.userAgent);
+}
 
+// Hide elements if it's a mobile device
+if (isMobile()) {
+  document.body.classList.add('hide');
+}
 class Paper {
   holdingPaper = false;
   mouseTouchX = 0;
