@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-image: url("https://i.ibb.co/9d8xyvr/back.png");
   background-position: center center;
-  color: #0a5c47;
+  color: #CC7D4E;
   font-family: 'Dancing Script', cursive;
   text-align: center;
 }
@@ -127,7 +127,7 @@ p {
 }
 
 h1 {
-  text-shadow: 2px 2px 5px #0a5c47;
+  text-shadow: 2px 2px 5px #CC7D4E;
   margin: 5px 0; /* Reduced margin for both top and bottom */
   font-size: 24px; /* Adjust size if needed */
 }
@@ -147,5 +147,5 @@ a {
 }
 
 a:hover {
-  color: #0a5c47;
+  color: #CC7D4E;
 }
