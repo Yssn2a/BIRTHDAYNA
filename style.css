@@ -1,34 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
-
-
-
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
 
 body {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-size: 1360px;
+  background-size: cover;
   background-image: url("https://i.ibb.co/9d8xyvr/back.png");
   background-position: center center;
+  color: #0a5c47;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
 }
+
 .wide {
   width: 300px;
   height: 200px;
-  align-items: center;/* Adjust the width as needed */
+  align-items: center; /* Adjust the width as needed */
 }
 
 .paper {
   background-image: url("https://static.vecteezy.com/system/resources/previews/006/893/584/non_2x/textured-crumpled-black-paper-background-free-photo.jpg");
   background-size: 500px;
-  background-position: ;
   padding: 20px 100px;
-/*  min-width: 800px; */
-  
   transform: rotateZ(-5deg);
-  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
-  
+  box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
   position: absolute;
 }
 
@@ -40,9 +37,17 @@ body {
   border-radius: 50%;
 }
 
+.large-image {
+  max-height: 250px; /* Ensure it doesn't overflow the container */
+  height: auto; /* Maintain aspect ratio */
+  width: 200%; /* Adjust this value to make the image larger */
+}
+
 .paper.image {
+  width: fit-content;
   padding: 10px;
 }
+
 .paper.image p {
   font-size: 30px;
 }
@@ -72,9 +77,75 @@ p {
   font-weight: 600;
   font-size: 30px;
   font-style: normal;
-  color: rgb(255 255 255);
+  color: rgb(255, 255, 255);
   opacity: 0.75;
   user-select: none;
-  
-  // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+}
+
+/* Loading Animation */
+.loading {
+  position: absolute; /* Positioning it absolutely within the body */
+  top: 20px; /* Adjusted position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: -1; /* Move it to the back */
+}
+
+.loading svg {
+  width: 50%; /* Adjusted to make it smaller */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.loading .linear-1 {
+  stroke-dasharray: 281;
+  -webkit-animation: dash 6s infinite linear forwards;
+}
+
+.loading .linear-2 {
+  stroke-dasharray: 300;
+  -webkit-animation: dash 5s infinite linear forwards;
+}
+
+.loading .linear-3 {
+  stroke-dasharray: 340;
+  -webkit-animation: dash 4s infinite linear forwards;
+}
+
+.loading .linear-4 {
+  stroke-dasharray: 400;
+  -webkit-animation: dash 3s infinite linear forwards;
+}
+
+/* Animation */
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 814;
+  }
+  to {
+    stroke-dashoffset: -814;
+  }
+}
+
+h1 {
+  text-shadow: 2px 2px 5px #0a5c47;
+  margin: 5px 0; /* Reduced margin for both top and bottom */
+  font-size: 24px; /* Adjust size if needed */
+}
+
+h3 {
+  margin: 0; /* Set to 0 to remove any gap */
+  font-size: 18px; /* Adjust size if needed */
+}
+
+a,
+h3 {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0a5c47;
 }
