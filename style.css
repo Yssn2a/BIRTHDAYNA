@@ -149,9 +149,6 @@ a {
 a:hover {
   color: #CC7D4E;
 }
-@media (max-width: 768px) { 
-  .desktop-only { 
-      display: none;
-       /* Hide on mobile */ 
-  } 
+.hide {
+  display: none;
 }
